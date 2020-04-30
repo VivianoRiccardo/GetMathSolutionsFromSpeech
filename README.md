@@ -18,3 +18,7 @@ of the most accurate words you can say with what you want really say. for exampl
 you can replace the word "Laplace" with "house" writing in the file substitutions.txt house;laplace
 
 - To get accurate results you should take a look to the inputs of wolfram alpha
+
+# The outputs
+
+- In the manings.txt files you can tell your device how to say some carachters/words exactly as you want
