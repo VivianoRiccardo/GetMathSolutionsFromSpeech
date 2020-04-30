@@ -1,0 +1,6 @@
+/;divided by
+(;open brackets
+);close brackets
+^;at the power of
+*;multiplied for
+!;factorial
