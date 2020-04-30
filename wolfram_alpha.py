@@ -10,6 +10,14 @@ for i in l:
     k = i.strip().split(";")
     d[k[0]] = k[1]
 f.close()
+
+f = open("meanings.txt","r")
+l = f.readlines()
+d2 = {}
+for i in l:
+    k = i.strip().split(";")
+    d2[k[0]] = k[1]
+f.close()
 # obtain audio from the microphone
 r = sr.Recognizer()
 while(True):
@@ -48,7 +56,10 @@ while(True):
         text = str(next(res.results).text)
 
         # read it
+        for i in d2.keys():
+            if i in text:
+                text = text.replace(i,d2[i])
         language = "en"
-        speech = gTTS(text = text, lang = language, slow = False)
+        speech = gTTS(text = text, lang = language, slow = True)
         speech.save("text.mp3")
         os.system("mplayer text.mp3")
