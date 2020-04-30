@@ -7,7 +7,8 @@ some python implemented library.
 
 - SpeechRecognition python library: https://github.com/Uberi/speech_recognition, to get speech to text
 - wolframalpha python library to get text to results
-- gTTS to reproduce the results
+- gTTS to save the results
+- mplayer to reproduce the results
 
 # The inputs:
 
