@@ -48,7 +48,9 @@ while(True):
     
     if text == "repeat" or text == "repeat ":
         os.system("mplayer text.mp3")
-    elif text != "repeat" and text != "repeat " and text != "nothing":
+    elif text == "stop" or text == "stop ":
+        break
+    elif text != "nothing":
         #wolfram alpha computation
         client = wolframalpha.Client("QWK49J-GR4UTVUPH7")
         res = client.query(text)
